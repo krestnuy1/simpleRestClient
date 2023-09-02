@@ -129,7 +129,7 @@ public class Communication {
         );
 
         // Возвращаем ответ как ResponseEntity<String>
-        System.out.println(responseEntity.getBody());
+
         return responseEntity;
     }
 }

@@ -43,7 +43,7 @@ public class App {
         String sessionId = communication.getSessionId();
 
         // Собираем итоговый код
-        String code = sessionId + createUserResponse.getBody() + updateUserResponse.getBody() + deleteUserResponse.getBody();
+        String code = createUserResponse.getBody() + updateUserResponse.getBody() + deleteUserResponse.getBody();
 
         // Выводим итоговый код
         System.out.println("Итоговый код: " + code);
