@@ -39,8 +39,7 @@ public class App {
         // Удаление пользователя с id = 3
         ResponseEntity<String> deleteUserResponse = communication.deleteUser(3L);
 
-        // Получение Session ID
-        String sessionId = communication.getSessionId();
+
 
         // Собираем итоговый код
         String code = createUserResponse.getBody() + updateUserResponse.getBody() + deleteUserResponse.getBody();
